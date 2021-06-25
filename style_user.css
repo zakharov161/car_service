@@ -1,0 +1,126 @@
+.reg {
+	margin-top: -40px; 
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+	height: 540px;
+}
+
+.reg form {
+	width: 550px;
+}
+
+.date {
+	float: left;
+	margin-right: 5%;
+}
+
+.reg form .btn {
+	background-color: #ff6b00;
+	width: 170px;
+}
+
+.order h5 {
+	color:black;
+	font-size: 15px;
+	margin-top: 15px;
+	margin-left: 10px
+}
+
+
+.order span {
+	color: lightgray;
+	font-size: 40px;
+	margin-left: -30px;
+	margin-top: -20px;
+	position: absolute;
+	margin-left: -40px;
+}
+
+.order p {
+	width: 220px;
+	color:gray;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+
+h2 {
+	font-weight: 400;
+}
+
+.orders h4 {
+	font-weight: 400;
+	color: gray;
+	padding: 20px
+}
+
+.orders {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+.list {
+	color: white;
+	padding: 10px;
+	width: auto;
+}
+
+.list p {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.list span {
+	color: white;
+	font-size: 24px;
+	padding: 4px 10px;
+	background-color: red;
+	border-radius: 4px;
+}
+
+.list div:nth-child(1) {
+	height: 30px;
+}
+
+.serv span {
+	background-color:#ff8100 ;
+	padding: 0px 15px 5px 15px;
+	font-size: 20px;
+	border-radius: 0px;
+}
+
+.serv {
+	margin-top: 190px;
+}
+
+.description {
+	background-color: white;
+	height: 30%;
+	width: 1120px;
+	color: black;
+	margin-top: -24px;
+}
+
+.buttons {
+	text-align: right;
+	position:relative;
+}
+
+.apply {
+	
+	background-color: #0a2b42;
+	color: white;
+	border-radius: 0px;
+	margin-right: 7px;
+}
+
+.cancel {
+	margin-right: 0px;
+	background-color: #ff0000
+}
+
+.apply:hover {
+	border: 1px solid #54a7e8;
+	color: white;
+}
+
