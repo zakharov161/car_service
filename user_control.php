@@ -23,7 +23,7 @@
 						<h5 style = 'color: black;' class = 'p-1'>".$row['phone']."</h5>
 					</div>
 					<div class = 'col-4'>
-					<select form = 'form' name = '".$row['user_id']."' class = 'form-group' style = 'border: 1px solid #9b9b9b; border-radius: 5px; font-size: 18px; font-weight: 600; padding: 5px; margin-top: -5px'>
+					<select form = 'form2' name = '".$row['user_id']."' class = 'form-group' style = 'border: 1px solid #9b9b9b; border-radius: 5px; font-size: 18px; font-weight: 600; padding: 5px; margin-top: -5px'>
 						<option value = '' hidden = 'true'>".$user."</option>
 						<option value = 'admin'>Администратор</option>
 						<option value = 'manager'>Менеджер</option>
@@ -33,7 +33,7 @@
 					<hr>";
 				}
 			?>
-			<form id = 'form' action = 'edit_user.php' method = 'post'>
+			<form id = 'form2' action = 'edit_user.php' method = 'post'>
 					<button class = 'btn btn-primary' style = "margin: 10px 0px; width: 120px" type = 'submit'>Сохранить</button>
 			</form>
 		</div>
