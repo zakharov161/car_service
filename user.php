@@ -94,7 +94,7 @@
 				<p>Призжайте к нам в назначенное время</p>
 			</div>
 		</div>
-		<h2 style = "margin: 20px 0px -10px -14px">Мои заявки</h2>
+		<h2 style = "margin: 20px 0px 0px -14px">Мои заявки</h2>
 		<?php require("get_orders.php") ?>
 		<div class = "row mt-3">
 			<div class = "col-12 mt-5">

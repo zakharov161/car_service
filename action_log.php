@@ -19,6 +19,6 @@
 		header("Location: join.php");
 	}
 	if ($_SESSION ["category"] == "user") header("Location: user.php");
-	if ($_SESSION ["category"] == "admin") header("Location: admin.php");
+	if ($_SESSION ["category"] == "admin" || $_SESSION ["category"] == "manager") header("Location: admin.php");
 ?>
 	

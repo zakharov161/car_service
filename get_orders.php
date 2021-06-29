@@ -10,10 +10,10 @@
 		on users.user_id = orders.client ";
 
 	if ($_SESSION ["category"] == "user") {
-		$query .= "where users.user_id = '$user'";
+		$query .= "where users.user_id = '$user' ";
 		$margin = "margin-top: 20px; font-size: 22px";
 	}
-
+	$query .= "order by access";
 	$result = mysqli_query($dbcon, $query);
 	if (!result) die("Ошибка выполнения запроса") . mysql_error();
 	$row_cnt = $result->num_rows;
@@ -29,7 +29,7 @@
 			$worktime = $row['to_time'] - $row['from_time'];
 			$repair = strstr($row['repair_name'], '(', true);
 			echo 
-			"<div class = 'row mt-4 reg list'>
+			"<div class = 'row mt-3 reg list'>
 				<div class = 'col-10'>
 					<p style = '".$margin."'>
 						Заявка №".$row['record_id']."<br>
