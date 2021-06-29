@@ -10,6 +10,9 @@
 	$user = $_SESSION ["id"];
 	$query = "INSERT INTO orders(client, car, repair, date, from_time, to_time, problem) VALUES ('$user', '$car', '$repair', '$date', '$from_time', '$to_time', '$problem')";
 	$result = mysqli_query($dbcon, $query);
-	if (!$result) die("Ошибка выполнения запроса") . mysql_error(); 
-	else header("location: user.php");
+	if (!$result) die("Ошибка выполнения запроса") . mysql_error();
+	else {
+		$_SESSION['message'] = "Ваша заявка принята! В течении часа наш менеджер позвонит вам для подтверждения заявки!";
+		header("location: user.php");		
+	}
 ?>

@@ -21,7 +21,7 @@
 			<form action = "action_log.php" method = "post" class = "text-center" style = "width: 300px">
 				<h1>Авторизация</h1>
 				<input required name = "phone" placeholder="Телефон" class = "form-control">
-				<input required name = "password" placeholder="Пароль" class = "form-control">
+				<input type = "password" required name = "password" placeholder="Пароль" class = "form-control">
 				<button type = "submit" class = "btn btn-primary mt-4">Войти</button>
 			</form>
 		</div>
